@@ -217,6 +217,11 @@ a {
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
 }
 
 .work-wrpapper .main-box .box-1 img {
@@ -235,4 +240,229 @@ a {
   line-height: 28px;
   opacity: 0.7;
   padding-bottom: 15px;
+}
+
+i {
+  color: #2405f2;
+}
+
+.left-part .left-part-btn a:hover {
+  color: red;
+}
+
+/* ========================= */
+
+/* ======================================================
+             Project part css start
+============================================================*/
+#project-heading {
+  padding-bottom: 64px;
+}
+#project-heading h1 {
+  color: var(--text-color);
+  font-size: 48px;
+  font-weight: 600;
+}
+#project-heading a {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-heading a:hover {
+  color: var(--btn-color);
+}
+
+#project-heading i {
+  color: var(--text-color);
+}
+
+.main-img-overlay-text {
+  bottom: 20%;
+  padding-left: 48px;
+  padding-right: 350px;
+}
+
+.main-img-overlay-text h1 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  padding-bottom: 16px;
+}
+
+.main-img-overlay-text p {
+  padding-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  opacity: 0.8;
+  line-height: 28px;
+}
+
+.main-img-overlay-text a {
+  color: var(--btn-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.main-img-overlay-text a:hover {
+  color: #f4f6fc;
+}
+
+.main-img-overlay-text i {
+  color: var(--btn-color);
+}
+
+.right-overlay-text {
+  bottom: 20%;
+  padding-left: 56px;
+}
+.right-overlay-text h1 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.right-overlay-text a {
+  color: var(--btn-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear.2s;
+  -webkit-transition: all linear.2s;
+  -moz-transition: all linear.2s;
+  -ms-transition: all linear.2s;
+  -o-transition: all linear.2s;
+}
+
+.right-overlay-text a:hover {
+  color: #f4f6fc;
+}
+
+.right-overlay-text i {
+  color: var(--btn-color);
+}
+/* ======================================================
+             Project part css End
+============================================================*/
+
+/* ============================= Feature part start ====================== */
+.feature {
+  padding: 56px 0;
+  background-color: #f4f6fc;
+  padding-bottom: 90px;
+}
+
+.feature .feature-main-text {
+  text-align: center;
+}
+
+.feature .feature-main-text p {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 18px;
+}
+
+.feature .feature-main-text h1 {
+  font-size: 48px;
+  color: var(--black);
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.feature .main-box-feature {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 47px;
+  justify-content: center;
+}
+
+.feature .main-box-feature .box {
+  background-color: #fff;
+  width: 350px;
+  height: 270px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.feature .main-box-feature .box:hover {
+  box-shadow: 0px -1px 21px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px -1px 21px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -1px 21px -2px rgba(0, 0, 0, 0.75);
+  background-color: #faf5f5;
+}
+
+.feature .main-box-feature .box h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.feature .main-box-feature .box p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-right: 50px;
+}
+
+/* ============================= Feature part End ====================== */
+
+@media only screen and (max-width: 960px) {
+  .work-wrpapper .main-box {
+    text-align: center;
+  }
+
+  .work-wrpapper .main-box .box-1 {
+    padding-bottom: 20px;
+  }
+
+  .work-wrpapper .main-box .box-1 p {
+    padding: 0 194px;
+  }
+  .work-wrpapper .left-part {
+    text-align: center;
+  }
+
+  .work-wrpapper .left-part p {
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .work-wrpapper .left-part a {
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+
+  .main-box-feature {
+    display: block;
+    padding-left: 200px;
+  }
 }
