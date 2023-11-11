@@ -43,7 +43,8 @@ a {
   --white: #fff;
 }
 /* ============================ Common css End ==================== */
-/* ============================= Nav sec css start ===================== */
+
+/* ============================= Nav sec css start ================ */
 .nav-part {
   background-color: var(--primary-color);
   padding: 32px 0;
@@ -99,7 +100,7 @@ a {
 
 /* ============================= Nav sec css End ===================== */
 
-/* ============================== Hero sec css start =================== */
+/* ============================== Hero sec css start ================== */
 .banner-left h1 {
   color: var(--white);
   font-size: 54px;
@@ -190,7 +191,7 @@ a {
   background-color: #fcd980;
 }
 
-/* ============================== Hero sec css End =================== */
+/* ============================ Hero sec css End =================== */
 .work-wrpapper {
   padding: 128px 0;
   background-color: #f4f6fc;
@@ -250,93 +251,19 @@ i {
   color: red;
 }
 
-/* ========================= */
-
 /* ======================================================
              Project part css start
-============================================================*/
-#project-heading {
-  padding-bottom: 64px;
-}
-#project-heading h1 {
-  color: var(--text-color);
+=========================================================*/
+#project-part .heading-left h2 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
   font-size: 48px;
   font-weight: 600;
 }
-#project-heading a {
-  color: var(--text-color);
-  font-size: 16px;
-  font-weight: 500;
-  transition: all linear 0.2s;
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-}
 
-#project-heading a:hover {
-  color: var(--btn-color);
-}
-
-#project-heading i {
-  color: var(--text-color);
-}
-
-.main-img-overlay-text {
-  bottom: 20%;
-  padding-left: 48px;
-  padding-right: 350px;
-}
-
-.main-img-overlay-text h1 {
-  color: var(--white);
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px;
-  padding-bottom: 16px;
-}
-
-.main-img-overlay-text p {
-  padding-bottom: 40px;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--white);
-  opacity: 0.8;
-  line-height: 28px;
-}
-
-.main-img-overlay-text a {
-  color: var(--btn-color);
-  font-size: 16px;
-  font-weight: 500;
-  transition: all linear 0.2s;
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-}
-
-.main-img-overlay-text a:hover {
-  color: #f4f6fc;
-}
-
-.main-img-overlay-text i {
-  color: var(--btn-color);
-}
-
-.right-overlay-text {
-  bottom: 20%;
-  padding-left: 56px;
-}
-.right-overlay-text h1 {
-  color: var(--white);
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px;
-}
-
-.right-overlay-text a {
-  color: var(--btn-color);
+#project-part .heading-right a {
+  color: #282938;
+  font-family: var(--primary-font);
   font-size: 16px;
   font-weight: 500;
   transition: all linear.2s;
@@ -346,18 +273,190 @@ i {
   -o-transition: all linear.2s;
 }
 
-.right-overlay-text a:hover {
-  color: #f4f6fc;
-}
-
-.right-overlay-text i {
+#project-part .heading-right .heading-btn:hover a {
   color: var(--btn-color);
 }
+
+#project-part .heading-right .heading-btn:hover i {
+  color: var(--btn-color);
+}
+
+#project-part .heading-right i {
+  color: var(--text-color);
+  line-height: none;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .left-main-img {
+  background: url(/image/Card.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 843px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#project-part .left-main-img:hover .overlay {
+  left: 0;
+}
+
+#project-part .left-main-img .overlay {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  left: -50%;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .left-main-img .overlay .main-content {
+  padding-left: 48px;
+  padding-right: 30px;
+  position: absolute;
+  bottom: 15%;
+}
+
+#project-part .left-main-img .overlay .main-content h2 {
+  color: var(--white, #fff);
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+#project-part .left-main-img .overlay .main-content p {
+  color: var(--White, #fff);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+#project-part .left-main-img .overlay .main-content a {
+  color: var(--btn-color, #fcd980);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .left-main-img .overlay .main-content a:hover {
+  color: #fff;
+}
+
+#project-part .left-main-img .overlay .main-content i {
+  color: var(--btn-color);
+  padding-left: 15px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .left-main-img .overlay .main-content i:hover {
+  color: #fff;
+}
+
+#project-part .project-small-img {
+  background: url(/image/Rectangle\ 1313.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 284px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#project-part .small-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    329deg,
+    #1c1e53 -10.96%,
+    rgba(28, 30, 83, 0.42) 103.96%
+  );
+  right: -100%;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .small-overlay .small-overlay-content {
+  padding-left: 56px;
+  padding-right: 36px;
+  position: absolute;
+  bottom: 15%;
+}
+
+#project-part .small-overlay .small-overlay-content h2 {
+  color: var(--White, #fff);
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+#project-part .small-overlay .small-overlay-content a {
+  color: var(--btn-color, #fcd980);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#project-part .small-overlay .small-overlay-content a:hover {
+  color: #fff;
+}
+
+#project-part .small-overlay .small-overlay-content i {
+  color: var(--btn-color);
+  line-height: none;
+  padding-left: 16px;
+}
+
+#project-part .project-small-img:hover .small-overlay {
+  right: 0;
+}
+
 /* ======================================================
              Project part css End
-============================================================*/
+=========================================================*/
 
-/* ============================= Feature part start ====================== */
+/* ================= Feature part start ================= */
 .feature {
   padding: 56px 0;
   background-color: #f4f6fc;
@@ -433,6 +532,418 @@ i {
 }
 
 /* ============================= Feature part End ====================== */
+
+/* =========================== Client part css start ====================*/
+#client-part {
+  padding: 130px 0;
+  border: 1px solid rgba(77, 77, 77, 0.329);
+}
+
+.client-left h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: var(--primary-font);
+  padding-bottom: 16px;
+}
+
+.client-left p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  font-family: var(--primary-font);
+  line-height: 28px;
+}
+
+.client-right h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  font-family: var(--primary-font);
+  padding-bottom: 48px;
+}
+
+.client .client-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 80px;
+  background: url(/image/woman.png);
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  -ms-border-radius: 80px;
+  -o-border-radius: 80px;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.client-details h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+.client-details p {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+/* ========================== Client part css End ============== */
+
+/* ========================== FAQ css start ==================== */
+#faq-part {
+  padding: 10px 0;
+  align-items: center;
+}
+
+.faq-left h2 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 38px;
+  font-weight: 600;
+  padding-right: 41px;
+}
+
+.faq-left a {
+  color: #2405f2;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.faq-left a:hover {
+  color: var(--btn-color);
+}
+
+.accordion-item h2 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.accordion-item span {
+  color: #2405f2;
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 59px;
+}
+
+.accordion-body {
+  padding-right: 36px;
+  padding-left: 105px;
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.accordion-item {
+  outline: none;
+  border-left: none;
+  border-right: none;
+}
+
+.accordion-1 {
+  border-top: none;
+}
+/* ========================== FAQ css End ==================== */
+
+/* ================ inquiry part css start ================= */
+.inquiry-left {
+  background: url(/image/woman-writing-on-paper-3228878.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 656px;
+  height: 691px;
+}
+
+.inquiry-overlay {
+  height: 100%;
+  width: 100%;
+  background: #1c1e5380;
+}
+
+.inquiry-content {
+  padding: 0 96px;
+  padding-top: 96px;
+}
+
+.inquiry-content h3 {
+  color: var(--white, #fff);
+  font-family: var(--primary-font);
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px;
+  padding-bottom: 24px;
+}
+
+.inquiry-content p {
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.inquiry-right {
+  background: #1c1e53;
+  height: 100%;
+  width: 100%;
+}
+
+.inquiry-right-content {
+  padding-left: 70px;
+  padding-top: 96px;
+}
+
+.inquiry-right-content h4 {
+  color: var(--white);
+  font-family: var(--primary-font);
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.inquiry-right-content p {
+  color: #f4f6fc;
+  font-family: var(--primary-font);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-right: 58px;
+  padding-bottom: 40px;
+}
+
+.textInputWrapper {
+  position: relative;
+  width: 432px;
+  margin: 12px 5px;
+  --accent-color: #ebe263;
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  /* border: 1px solid rgba(230, 0, 0, 0.42); */
+}
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -1px;
+  z-index: 4;
+  width: 100%;
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  /* border: 1px solid rgb(255, 13, 13); */
+}
+
+.textInputWrapper:focus-within:before {
+  transform: scaleX(1);
+}
+
+.textInputWrapper:focus-within:after {
+  /* border-bottom: 2px solid var(--accent-color); */
+  transform: scaleX(1);
+}
+
+.textInputWrapper:after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  will-change: transform;
+  border-bottom: 2px solid var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.textInput::placeholder {
+  transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.textInputWrapper .textInput {
+  border-radius: 8px;
+  border: 1px solid #ffffff36;
+  background-color: transparent;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 200ms;
+  transition-property: background-color;
+  color: var(--white);
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 18px 0;
+  padding-left: 32px;
+  width: 432px;
+  height: 64px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  outline: none;
+}
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  background-color: #35353552;
+}
+
+.textInputWrapper:focus-within .textInput::placeholder {
+  opacity: 0;
+}
+
+#bottone {
+  background-color: var(--btn-color);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  border: none;
+  outline: none;
+  padding: 15px 120px;
+  border-radius: 41px;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  margin-left: 20px;
+  margin-top: 39px;
+  display: inline-block;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#bottone:hover {
+  background-color: rgb(192, 185, 88);
+}
+
+#bottone a {
+  color: #282938;
+  display: inline-block;
+}
+
+.btn2 {
+  display: inline-block;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 129px;
+  padding-top: 28px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.btn2:hover {
+  color: #ebe263;
+}
+
+/* ================ inquiry part css End ================ */
+
+/* ================ Blog part css start ================= */
+#blog-part {
+  padding: 40px 0;
+}
+
+#blog-part .blog-heading h3 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#blog-part .client-details h5 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  padding-top: 40px;
+  font-weight: 500;
+  padding-bottom: 16px;
+  opacity: 0.7;
+}
+
+#blog-part .client-details h3 {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+  padding-bottom: 16px;
+  padding-right: -20px;
+}
+
+#blog-part .client-details p {
+  color: var(--text-color, #282938);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+  margin-bottom: 32px;
+  padding-right: 10px;
+}
+
+#blog-part .client-details a {
+  color: var(--black);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 500;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#blog-part .client-details i {
+  color: var(--black);
+  list-style: none;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+#blog-part .client-details .btn:hover a {
+  color: var(--btn-color);
+}
+
+#blog-part .client-details .btn:hover i {
+  color: var(--btn-color);
+}
+/* ================ Blog part css End =================== */
+
+/* ================ Footer part css start =============== */
+/* ================ Footer part css End ================= */
 
 @media only screen and (max-width: 960px) {
   .work-wrpapper .main-box {
